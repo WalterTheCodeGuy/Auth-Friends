@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/api/login",
+      "dest": "/server.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/friends",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/friends/:id",
+      "dest": "/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/friends",
+      "dest": "/server.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/friends/:id",
+      "dest": "/server.js",
+      "methods": ["PUT"]
+    },
+    {
+      "src": "/api/friends/:id",
+      "dest": "/server.js",
+      "methods": ["DELETE"]
+    }
+  ]
+}
