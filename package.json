@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "builds": [{ "src": "project-name/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "builds": [{ "src": "package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
   },
   "author": "Lambda School",
   "license": "ISC"
